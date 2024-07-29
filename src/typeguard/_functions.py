@@ -29,6 +29,7 @@ def check_type(
     value: object,
     expected_type: type[T],
     *,
+    argname: Any = None,
     forward_ref_policy: ForwardRefPolicy = ...,
     typecheck_fail_callback: TypeCheckFailCallback | None = ...,
     collection_check_strategy: CollectionCheckStrategy = ...,
@@ -40,6 +41,7 @@ def check_type(
     value: object,
     expected_type: Any,
     *,
+    argname: Any = None,
     forward_ref_policy: ForwardRefPolicy = ...,
     typecheck_fail_callback: TypeCheckFailCallback | None = ...,
     collection_check_strategy: CollectionCheckStrategy = ...,
@@ -50,6 +52,7 @@ def check_type(
     value: object,
     expected_type: Any,
     *,
+    argname: Any = None,
     forward_ref_policy: ForwardRefPolicy = TypeCheckConfiguration().forward_ref_policy,
     typecheck_fail_callback: TypeCheckFailCallback | None = (
         TypeCheckConfiguration().typecheck_fail_callback
